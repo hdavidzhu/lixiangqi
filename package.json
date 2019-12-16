@@ -1,0 +1,25 @@
+{
+  "name": "lixiangqi",
+  "version": "1.0.0",
+  "description": "open source Chinese chess",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdavidzhu/lixiangqi.git"
+  },
+  "scripts": {
+    "dev": "npx nodemon --watch server server/index.js",
+    "start": "node server/index.js"
+  },
+  "author": "hdavidzhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdavidzhu/lixiangqi/issues"
+  },
+  "homepage": "https://github.com/hdavidzhu/lixiangqi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
