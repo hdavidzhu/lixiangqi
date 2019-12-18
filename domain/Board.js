@@ -67,3 +67,10 @@ export function build () {
     ])
   ])
 }
+
+function move (board, startPosition, endPosition) {
+  const line = board.get(startPosition.y)
+  const piece = line.get(startPosition.x)
+  // TODO: Determine if move is valid
+  board.set(endPosition.y, line.set(endPosition.x, piece))
+}
