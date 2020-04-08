@@ -1,2 +1,7 @@
 # lixiangqi
-open source Chinese chess
+
+Open source chinese chess
+
+## TODO
+
+- [ ] Render game board

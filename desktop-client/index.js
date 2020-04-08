@@ -7,10 +7,11 @@ const html = htm.bind(React.createElement)
 ReactDOM.render(
   html`
     <div>
-      <pre>
-        ${JSON.stringify(Board.build(), null, 2)}
-      </pre
-      >
+      ${Board.build().map(line => {
+        return line.map(piece => {
+          JSON.stringify(piece, null, 2)
+        })
+      })}
     </div>
   `,
   document.body
